@@ -36,10 +36,11 @@ label {
 }
 
 input[type="text"] {
+    font-family: 'Rubik', sans-serif;
     width: 100%;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    font-size: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: 15px;
     border-radius: 8px;
     border: 2px solid #ccc;
 }
@@ -51,7 +52,7 @@ input[type="file"] {
 
 
 input[type="submit"] {
-    background-color: darkblue;
+    background-color: #800080;
     margin: 10px auto 5px;
     color: #fff;
     border: none;
@@ -60,14 +61,15 @@ input[type="submit"] {
     border-radius: 4px;
     border: 0.25px solid blue;
     cursor: pointer;
-
+    font-family: 'Rubik', sans-serif;
     transition: background-color 0.25s, color 0.25s, border 0.25s;
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(198, 248, 0);
-    color: blue;
+    background-color:darkblue;
+    color: white;
     border: 0.25px solid blue;
+    font-family: 'Rubik', sans-serif;
 }
 
 div {
@@ -82,6 +84,7 @@ div {
     border-radius: 8px;
     padding: 10px;
     margin-top: 20px;
+    min-height: 20px;
     background-color: white;
     opacity: 0;
     transition: opacity 0.5s;

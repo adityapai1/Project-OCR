@@ -41,7 +41,7 @@
             const socket = io();
 
             socket.on('ocr_update', (data) => {
-                progressDiv.innerHTML += `<p>${data.message}</p>`;
+                progressDiv.innerHTML += `<p>${data.message}</p><br>`;
                 progressDiv.scrollTop = progressDiv.scrollHeight;
             });
 
