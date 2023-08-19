@@ -105,9 +105,11 @@ def run_ocr():
         def ocr_progress_emitter():
             ocr_program(target_folder, patterns_list, socketio)
 
-        # ocr_program(target_folder, patterns_list, socketio)
-
         socketio.start_background_task(ocr_progress_emitter)
+
+        # ocr_program(target_folder, patterns_list, socketio)
+        
+
 
         return 'OCR PROCESS COMPLETED'
         # return render_template("success.html")
