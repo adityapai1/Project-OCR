@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <title>The OCR Project</title>
+    <title>Project OCR</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
 </head>
 
 <body>
@@ -26,16 +26,18 @@
         </label>
 
         <div style="padding-top: 10px;">
-            <input type="submit" value="Run OCR">
+            <input type="submit" value="Run OCR" id="submit">
         </div>
 
-        <div id="progress">
+        <div id="progress" style="display: none;">
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
         <script>
             const progressDiv = document.getElementById('progress');
             const ocrForm = document.getElementById('ocrForm');
+            const showButton = document.getElementById('submit');
+            const hiddenDiv = document.getElementById('progress');
             const socket = io();
 
             socket.on('ocr_update', (data) => {
@@ -48,6 +50,13 @@
                     event.preventDefault();
                     socket.emit('submit_ocr');
                 });
+            });
+
+            showButton.addEventListener('click', function () {
+                hiddenDiv.style.display = 'block';
+                setTimeout(function () {
+                    hiddenDiv.style.opacity = '1';
+                }, 1)
             });
         </script>
     </form>

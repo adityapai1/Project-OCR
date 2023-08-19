@@ -82,4 +82,8 @@ div {
     border-radius: 8px;
     padding: 10px;
     margin-top: 20px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+
 }
