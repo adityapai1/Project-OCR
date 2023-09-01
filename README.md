@@ -28,7 +28,7 @@ https://github.com/adityapai1/web_socket/assets/105188352/f1d81f79-b247-448a-95e
 
 https://github.com/adityapai1/web_socket/assets/105188352/53efd306-4db8-482e-a6cf-63c8ce725ad3
 
-3 After the completion another page called success.txt should be rendered. That's not Happening.
+3 After the completion another page called success.html should be rendered. That's not Happening.
 
 
 
