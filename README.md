@@ -40,18 +40,18 @@ Clone the project :
   git clone https://github.com/adityapai1/Easy_OCR.git
 ```
 
+Install Flask , Pytorch  : 
 
+```bash
+pip install Flask 
+pip install pytorch
+pip install pandas
+
+```
 Install easyocr : 
 
 ```bash
 pip install easyocr
-```
-
-
-Install Flask : 
-
-```bash
-pip install Flask
 ```
 
 
